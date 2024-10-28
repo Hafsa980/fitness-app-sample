@@ -1,0 +1,41 @@
+.dashboard-container {
+    display: flex;
+    background-color: #1c1c1e;
+    height: 100vh;
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  .welcome-box, .stats-box, .workouts-box {
+    margin-bottom: 2rem;
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .plan {
+    padding: 1rem;
+    background-color: limegreen;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .plans {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

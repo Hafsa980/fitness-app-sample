@@ -1,0 +1,32 @@
+.user-list-container {
+    display: flex;
+    background-color: #1c1c1e;
+    height: 100vh;
+  }
+  
+  .user-list-content {
+    flex: 1;
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+  }
+  
+  button {
+    margin: 0 5px;
+    padding: 0.5rem 1rem;
+    background-color: limegreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+  }
+  

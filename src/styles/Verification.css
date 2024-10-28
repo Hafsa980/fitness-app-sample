@@ -1,0 +1,51 @@
+.verification-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/image2.png');
+    background-size: cover;
+  }
+  
+  .verification-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 350px;
+    color: #fff;
+  }
+  
+  .code-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 1rem;
+    background-color: limegreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .verification-box {
+      width: 90%;
+    }
+    input {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
