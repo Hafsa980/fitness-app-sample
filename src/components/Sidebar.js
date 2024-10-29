@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Sidebar.css';
+import Logo from '../images/logo.png'
 
 function Sidebar() {
   return (
@@ -17,6 +18,7 @@ function Sidebar() {
         </ul>
       </nav>
       <button className="logout-btn">Go Live</button>
+      <img src={Logo} alt="Logo" />
     </div>
   );
 }

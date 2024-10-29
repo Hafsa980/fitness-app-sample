@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import '../styles/Workouts.css';
-import image from '../images/image2.png'
+import image from '../images/image2.png';
 
 function Workouts() {
   const [workouts, setWorkouts] = useState([
@@ -13,7 +13,6 @@ function Workouts() {
   
   const navigate = useNavigate();
 
-  // Load new workouts from localStorage when the component mounts
   useEffect(() => {
     const savedWorkouts = Object.keys(localStorage)
       .filter((key) => key.startsWith("workout-"))
@@ -22,17 +21,29 @@ function Workouts() {
   }, []);
 
   const handleAddWorkout = () => {
-    navigate("/add-workout"); // Adjust route as necessary
+    navigate("/add-workout");
   };
 
   return (
-    <div className="workouts-container">
+    <div className="dashboard-container">
       <Sidebar />
-      <div className="workouts-content">
-        <h2>Workouts</h2>
-        <button onClick={handleAddWorkout} className="add-workout-button">
-          Add New Workout
-        </button>
+      <div className="main-content">
+        {/* Top Navbar */}
+        <div className="navbar">
+          <h1 className="welcome-text">Welcome John</h1>
+          <div className="user-info">
+            <img src={image} alt="User" className="user-avatar" />
+            <span className="user-name"></span>
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="workouts-header">
+          <h2>Workouts</h2>
+          <button onClick={handleAddWorkout} className="add-workout-button">
+            Add New Workout
+          </button>
+        </div>
         <div className="workout-grid">
           {workouts.map((workout, index) => (
             <div key={index} className="workout-card">
